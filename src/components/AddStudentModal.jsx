@@ -145,6 +145,24 @@ const AddStudentModal = ({setAddStudentModalForm,handleSubmit,setSubmitData}) =>
                   />
                 </div>
 
+                <div className="Title__ my-1 mr-8">
+                  <label className="text-lg text-gray-300 " htmlFor="title">
+                  Result Access
+                  </label>
+                  <input
+                    onChange={(e) =>
+                      setSubmitData(
+                        (prev) => (prev = { ...prev, resultAccess: e.target.checked })
+                      )
+                    }
+                    id="title"
+                    placeholder="Enter Title"
+                    type="checkbox"
+                    className="block max-w-72 px-4 py-2 mt-2 text-gray-800 bg-white border border-[#10b981] rounded-md   focus:outline-none focus:ring"
+                    required
+                  />
+                </div>
+
                
               </div>
 

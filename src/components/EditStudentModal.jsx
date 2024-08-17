@@ -154,7 +154,28 @@ const EditStudentModal = ({setEditStudentModalForm,handleSubmitEdit,setSubmitEdi
                     className="block w-96 px-4 py-2 mt-2 text-gray-800 bg-white border border-[#10b981] rounded-md   focus:outline-none focus:ring"
                     required
                   />
-            </div>
+                </div>
+
+                <div className="Title__ my-1 mr-8">
+                  <label className="text-lg text-gray-300 " htmlFor="title">
+                   Result Access
+                  </label>
+                  <input
+                   value={submitEditData.resultAccess}
+                    onChange={(e) =>
+                        setSubmitEditData(
+                        (prev) =>
+                          (prev = { ...prev, resultAccess: e.target.checked })
+                      )
+                    }
+                    id="title"
+                    placeholder="Enter Title"
+                    type="checkbox"
+                    checked={submitEditData.resultAccess}
+                    className="block w-96 px-4 py-2 mt-2 text-gray-800 bg-white border border-[#10b981] rounded-md   focus:outline-none focus:ring"
+                    required
+                  />
+                </div>
                     
               </div>
                

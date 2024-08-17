@@ -48,6 +48,7 @@ export function Student() {
      class: "",
      rollNo: "",
      branch: "",
+     resultAccess:false,
   
   });
   const [submitEditData, setSubmitEditData] = useState({
@@ -59,6 +60,7 @@ export function Student() {
     class: "",
     rollNo: "",
     branch: "",
+    resultAccess:false,
  
   });
   // const [addVendorModal, setaddVendorModal] = useState(false)
@@ -303,6 +305,14 @@ export function Student() {
        width:"155px",
        sortable:true
      },
+     {
+      name:"Result Access",
+      width:"155px",
+      cell: (row) => (
+        <div >
+          {row.resultAccess?"online":"offline"}
+        </div>
+    )},
      {
       name:"Result",
       width:"100px",
