@@ -99,7 +99,7 @@ const EditStudentModal = ({setEditStudentModalForm,handleSubmitEdit,setSubmitEdi
                     Class
                   </label>
                   <input
-                   value={submitEditData.class}
+                   value={submitEditData.class_}
                     onChange={(e) =>
                         setSubmitEditData(
                         (prev) => (prev = { ...prev, class: e.target.value })

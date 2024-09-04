@@ -95,7 +95,7 @@ const AddStudentModal = ({setAddStudentModalForm,handleSubmit,setSubmitData}) =>
                   <input
                     onChange={(e) =>
                       setSubmitData(
-                        (prev) => (prev = { ...prev, class: e.target.value })
+                        (prev) => (prev = { ...prev, class_: e.target.value })
                       )
                     }
                     id="title"

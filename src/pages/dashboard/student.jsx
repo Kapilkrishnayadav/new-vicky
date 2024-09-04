@@ -45,7 +45,7 @@ export function Student() {
      dob: "",
      fatherName: "",
      batch: "",
-     class: "",
+     class_: "",
      rollNo: "",
      branch: "",
      resultAccess:false,
@@ -57,7 +57,7 @@ export function Student() {
     dob: "",
     fatherName: "",
     batch: "",
-    class: "",
+    class_: "",
     rollNo: "",
     branch: "",
     resultAccess:false,
@@ -95,7 +95,7 @@ export function Student() {
     console.log(submitData);
     const {name,dob,fatherName,batch,rollNo,branch} =submitData;
     console.log(submitData)
-    if(!name || !dob|| !fatherName || !batch || !submitData.class || !rollNo || !branch)
+    if(!name || !dob|| !fatherName || !batch || !submitData.class_ || !rollNo || !branch)
     {
       alert("Fill all the fields");
       return;
@@ -154,7 +154,7 @@ export function Student() {
     console.log(submitEditData);
     const {name,dob,fatherName,batch,class_,rollNo,branch} =submitEditData;
     
-    if(!name || !dob|| !fatherName || !batch || !submitEditData.class || !rollNo || !branch)
+    if(!name || !dob|| !fatherName || !batch || !class_ || !rollNo || !branch)
     {
       alert("Fill all the fields");
       return;
@@ -294,7 +294,7 @@ export function Student() {
      },
      {
        name:"Class",
-       selector: row => row.class,
+       selector: row => row.class_,
        width:"155px",
        sortable:true
        
